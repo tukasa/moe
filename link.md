@@ -17,7 +17,11 @@ permalink: /link/
 - 野口悠紀雄『続「超」整理法・時間編』1995
 - 野口悠紀雄『「超」整理法〈3〉』1999
 
-## PDF
+## moePDF
 
 - [Memo on the Electron 2.0 (2016/11/19)]({{ "/assets/pdf/MoE2.0.pdf" | relative_url }})
 
+## moe旧サイト
+
+- [Memo on the Electron(旧サイト)](https://sites.google.com/site/moesystem/)
+- [Memo on the Electron(旧旧サイト)](https://sites.google.com/site/moemethod/)
