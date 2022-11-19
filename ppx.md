@@ -98,6 +98,10 @@ MC_celS    = {    ; エントリ表示 書式([;]メニュー)
 howmtitle    = M cF25,6 w35C z7 S1 tC"y-N-D" s1
 }
 
+E_cr    = {	; [Enter]用判別
+HOWM    ,*ppv %*name(CD,"%R","%1")
+}
+
 _Command = {	; ユーザコマンド・関数
 saveppepos = *setcust S_ppe:l=%*windowrect(%N.,l)
  *setcust S_ppe:t=%*windowrect(%N.,t)
