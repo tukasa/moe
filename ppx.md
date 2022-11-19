@@ -114,7 +114,7 @@ howmformat = *insert "= %bn%bn%bn[%*nowdatetime(Y-N-D-HMS)]" %: *cursor -3,2,0
 
 E_editor	= {	; エディタ用の拡張子判別
 *	,%"Text edit"%Orib,editor %FDC
-HOWM	,*edit %FDC -k *mapkey use,K_ppememo %%: *editmode -modify:clear %%: *editmode -modify:silent %%: *loadppepos
+HOWM	,*linecust howmpos,K_ppe:FIRSTEVENT,*loadppepos %%: *linecust howmpos,K_ppe:FIRSTEVENT= %: *edit %FDC -k *mapkey use,K_ppememo
 }
 
 K_ppememo = {	; moe用のppeキーバインド

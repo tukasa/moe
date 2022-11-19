@@ -23,7 +23,7 @@ PPEでの操作は以下。
 ## タイトル表示
 
 [;]で表示形式メニューを表示し、「このパス以降」「howmtitle」を選択する。
-フォルダで[H]を押し、出てきたウィンドウに`*diroption -thisbranch cmd:"*script %0\Script\title2comment.js %%: *setcust XC_cwrt= 2"`を入力して実行する。自動更新を解除したい場合は`*diroption -thisbranch cmd:""`とする。
+フォルダで[H]を押し、出てきたウィンドウに`*diroption -thisbranch cmd:"*script %0Script\title2comment.js %%: *setcust XC_cwrt= 2"`を入力して実行する。自動更新を解除したい場合は`*diroption -thisbranch cmd:""`とする。
 
 ![タイトル表示]({{ "/assets/images/howtouse02.png" | relative_url }})
 
