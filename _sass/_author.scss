@@ -1,0 +1,32 @@
+
+.author {
+  ul, ol {
+    list-style: none;
+    padding : 0px;
+  }
+
+  .img-responsive {
+    width:100px;
+    height:auto;
+    border-radius: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    max-width: 400px;
+    margin: 15px auto;
+    border-radius: 3px;
+    padding: 30px 0;
+}
+
+.author-content {
+    text-align: center;
+}

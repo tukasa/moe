@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<article class="basic">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <div class="parent-link-section">
+    <i class="fa-solid fa-tag"></i>
+    <a class="parent-link" href="{{ page.parenturl | relative_url }}">{{page.parenttitle}}</a>
+  </div>
+
+  {{ content }}
+  <time datetime="{{ page.date | date_to_xmlschema }}">
+    <ul>
+      <li>Created at:{{ page.date | date: "%Y-%m-%d" }}</li>
+      {% if page.last_modified_at %}
+      <li>Last modified at:{{ page.last_modified_at | date: "%Y-%m-%d" }}</li>
+      {% endif %}
+    </ul>
+  </time>
+</article>
+<div class="post-nav">
+  <div>
+    {% if page.previous.url %}
+    <a href="{{page.previous.url | relative_url }}">&laquo;&nbsp;{{page.previous.title}}</a>
+    {% endif %}
+  </div>
+  <div class="post-nav-next">
+    {% if page.next.url %}
+    <a href="{{page.next.url | relative_url }}">{{page.next.title}}&nbsp;&raquo;</a>
+    {% endif %}
+  </div>
+</div>

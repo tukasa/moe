@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<article class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <div class="post-meta">
+    {% assign date_format = site.date_format | default: "%-d %b %Y" %}
+    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: date_format }}</time>
+  </div>
+
+  {{ content }}
+
+  {% if page.tags %}
+    {% include post-tags.html %}
+  {% endif %}
+</article>
+<div class="post-nav">
+  <div>
+    {% if page.next.url %}
+    <a href="{{page.next.url | relative_url }}">&laquo;&nbsp;{{page.next.title}}</a>
+    {% endif %}
+  </div>
+  <div class="post-nav-next">
+    {% if page.previous.url %}
+    <a href="{{page.previous.url | relative_url }}">{{page.previous.title}}&nbsp;&raquo;</a>
+    {% endif %}
+  </div>
+</div>

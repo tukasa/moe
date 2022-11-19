@@ -1,0 +1,52 @@
+// Typography
+//
+// Headings, body text, lists, and other misc typographic elements.
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .1rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.04em;
+  color: var(--heading-color);
+}
+
+
+.blockquote, blockquote {
+    background-color: #f8f9fa;
+    border-left: 4px solid #ced4da;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: .5rem;
+
+    p:first-of-type {
+        margin: 0 0 1em;
+    }
+
+    p:last-of-type {
+        margin: 0;
+    }
+
+}
+
+.aa {
+  font-size:12pt;
+  line-height:18px;
+  font-family: 'Mona','IPA MONAPGOTHIC','MS PGothic','ＭＳ Ｐゴシック','MS Pｺﾞｼｯｸ','MS Pゴシック',sans-serif;
+  overflow:auto;
+  white-space:nowrap;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .1rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.04em;
+  color: var(--heading-color);
+}
+
+.emoji {
+  display: inline;
+  margin-bottom: 0px;
+}

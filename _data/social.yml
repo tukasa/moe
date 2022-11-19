@@ -1,0 +1,9 @@
+- title: Email
+  url: mailto://alpha01tks@gmail.com
+  icon: fas fa-envelope
+- title: Twitter
+  url: https://twitter.com/tukasa1900
+  icon: fab fa-twitter
+- title: GitHub
+  url: https://github.com/tukasa/
+  icon: fab fa-github

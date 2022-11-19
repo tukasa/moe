@@ -1,0 +1,11 @@
+<div class="post-tags-section">
+  <i class="post-tags-icon fas fa-tags"></i>
+  <ul class="post-tags">
+    {% for tag in page.tags %}
+      <li>
+        {% assign slugified_tag = tag | slugify %}
+        <a class="post-tag" href="{{ "/tags/" | relative_url }}#{{ slugified_tag }}">{{ slugified_tag }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

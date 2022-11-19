@@ -1,0 +1,80 @@
+# Setup
+lang: ja
+title: moe
+description: メモの方法論
+avatar: /avatar.jpeg
+cover_image: /bg.jpeg
+timezone: Asia/Tokyo
+
+highlighter: rouge
+
+# kramdown
+kramdown:
+  hard_wrap: true
+  syntax_highlighter: rouge
+
+# plugin
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jemoji
+# Optimize Jekyl SEO Tag
+twitter:
+  username: tukasa1900
+logo: logo.png
+social:
+  name: tukasa
+  links:
+    - https://twitter.com/tukasa1900
+    - https://github.com/tukasa
+
+# use sass
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Specify the author for blog posts
+author:
+  name: tukasa
+  url: https://github.com/tukasa/
+  email: alpha01tks@gmail.com
+
+# Build settings
+collections_dir: my_collections
+collections:
+  authors:
+    output: true
+  basic:
+    output: true
+  history:
+    output: true
+    permalink: /history/:name
+  advanced:
+    output: true
+    permalink: /advanced/:name
+  theory:
+    output: true
+    permalink: /theory/:name
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+  - scope:
+      path: ""
+      type: "basic"
+    values:
+      layout: "basic"
+      parenttitle: "Basic Customize"
+      parenturl: "/basic/"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
