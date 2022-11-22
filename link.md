@@ -21,7 +21,3 @@ permalink: /link/
 
 - [Memo on the Electron 2.0 (2016/11/19)]({{ "/assets/pdf/MoE2.0.pdf" | relative_url }})
 
-## moe旧サイト
-
-- [Memo on the Electron(旧サイト)](https://sites.google.com/site/moesystem/)
-- [Memo on the Electron(旧旧サイト)](https://sites.google.com/site/moemethod/)

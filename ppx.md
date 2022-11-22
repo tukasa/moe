@@ -12,6 +12,7 @@ permalink: /ppx/
 - PPx Script Module
 - PPx Text Module
 - PPx WIndow Module
+- PPx Key Module
 
 をダウンロードする。
 
@@ -26,6 +27,7 @@ permalink: /ppx/
 - PPXSCR.DLL / PPXSCR64.DLL
 - PPXTEXT.DLL / PPXTEXT64.DLL
 - PPXWIN.DLL / PPXWIN64.DLL
+- PPXKEY.DLL / PPXKEY64.DLL
 
 を入れる。PPX○○64.DLLが64bit版だ。また、Scriptという名前で空フォルダを作成する。
 
@@ -33,7 +35,7 @@ permalink: /ppx/
 
 Scriptフォルダに以下のファイルを入れる。
 
-_title2comment.js_
+_title2comment_all.js_
 
 ```text
 //!*script
@@ -44,7 +46,7 @@ for (var a = PPx.Entry.AllEntry; !a.atEnd(); a.moveNext() ){
   // フォルダを除外
   if (a.Attributes & 16){
     continue;
-  // .howmかつコメントがないファイルへの処理
+  // .howmかつコメントのないファイルへの処理
   } else if (a.Name.match(/.howm$/i) && a.Comment.match(/^$/i)){
     var dir = PPx.Extract('%1');
     var entryName = a.Name;
@@ -80,6 +82,7 @@ function readFile(fname, charset) {
 {% raw %}
 KC_main    = {	; PPcメイン窓
 E ,%ME_editor
+F6    ,*script %0\title2Comment_all.js
 ^R ,*comment "%ee%"コメントの編集"%{%*comment%|%}"
 ^N ,*ppememo
 }
