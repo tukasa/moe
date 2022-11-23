@@ -1,19 +1,9 @@
 - title: はじめに
   url: /
-- title: 知的生産の技術の歴史
-  url: /history/
-- title: moe
-  url: /moe/
-- title: 準備
-  url: /ppx/
-- title: フォルダ構成
-  url: /folder/
-- title: 基本的な使い方
-  url: /howtouse/
-- title: 応用編
-  url: /advanced/
 - title: 理論
   url: /theory/
+- title: 実践
+  url: /practice/
 - title: Author
   url: /author/
 - title: Link

@@ -1,9 +1,9 @@
 ---
 layout: default
-title: 知的生産の技術の歴史
+title: 実践
 auther: tukasa
-folder: history
-permalink: /history/
+folder: practice
+permalink: /practice/
 ---
 
 <h1>{{ page.title }}</h1>

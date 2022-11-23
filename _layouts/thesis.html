@@ -2,14 +2,20 @@
 layout: default
 ---
 
-<article class="basic">
-  <h1 class="post-title">{{ page.title }}</h1>
+<article class="thesis">
+  <h1 class="page-title">{{ page.title }}</h1>
   <div class="parent-link-section">
-    <i class="fa-solid fa-tag"></i>
+    <i class="fa-solid fa-file"></i>
     <a class="parent-link" href="{{ page.parenturl | relative_url }}">{{page.parenttitle}}</a>
+    {% if page.part %}
+    {% assign slugified_part = page.part | slugify %}
+    <i class="fa-solid fa-tags"></i>
+    <a class="parent-link" href="{{ page.parenturl | relative_url }}#{{ slugified_part }}">{{page.part}}</a>
+    {% endif %}
   </div>
 
   {{ content }}
+
   <time datetime="{{ page.date | date_to_xmlschema }}">
     <ul>
       <li>Created at:{{ page.date | date: "%Y-%m-%d" }}</li>
@@ -19,6 +25,7 @@ layout: default
     </ul>
   </time>
 </article>
+
 <div class="post-nav">
   <div>
     {% if page.previous.url %}

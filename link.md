@@ -4,7 +4,7 @@ title: Link
 permalink: /link/
 ---
 
-## サイト
+## 関連サイト
 
 - [TORO's Library](http://toro.d.dooo.jp/index.html)
 - [PoIC](https://scrapbox.io/poic/)

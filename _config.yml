@@ -43,38 +43,28 @@ author:
 # Build settings
 collections_dir: my_collections
 collections:
-  authors:
-    output: true
-  basic:
-    output: true
-  history:
-    output: true
-    permalink: /history/:name
-  advanced:
-    output: true
-    permalink: /advanced/:name
   theory:
     output: true
     permalink: /theory/:name
+  practice:
+    output: true
+    permalink: /practice/:name
 defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
   - scope:
       path: "assets/images"
     values:
       image: true
   - scope:
       path: ""
-      type: "basic"
+      type: "practice"
     values:
-      layout: "basic"
-      parenttitle: "Basic Customize"
-      parenturl: "/basic/"
+      layout: "thesis"
+      parenttitle: "実践"
+      parenturl: "/practice/"
   - scope:
       path: ""
-      type: "posts"
+      type: "theory"
     values:
-      layout: "post"
+      layout: "thesis"
+      parenttitle: "理論"
+      parenturl: "/theory/"
