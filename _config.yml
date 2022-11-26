@@ -1,6 +1,7 @@
 # Setup
 lang: ja
 title: moe
+url: https://tukasa.github.io/moe/
 description: メモの方法論
 avatar: /avatar.jpeg
 cover_image: /bg.jpeg
@@ -35,10 +36,10 @@ sass:
   style: :compressed
 
 # Specify the author for blog posts
-author:
-  name: tukasa
-  url: https://github.com/tukasa/
-  email: alpha01tks@gmail.com
+# author:
+#   name: tukasa
+#   url: https://github.com/tukasa/
+#   email: alpha01tks@gmail.com
 
 # Build settings
 collections_dir: my_collections
