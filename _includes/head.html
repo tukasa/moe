@@ -6,7 +6,13 @@
   <link rel="stylesheet" href="{{ 'assets/styles.css' | relative_url }}">
   <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="shortcut icon" type="image/svg+xml" href="{{ site.baseurl }}/lady.svg">
-  <title>{{ site.title }}</title>
+  <title>
+    {% if page.title %}
+      {{ page.title }} | {{ site.title }}
+    {% else %}
+      {{ site.title }} | {{ site.description}}
+    {% endif %}
+  </title>
   
   {% feed_meta %}
   {% seo title=false %}

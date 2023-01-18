@@ -165,6 +165,14 @@
   padding: .1em .5em;
 }
 
+.back-to-article-top {
+  display: block;
+  font-size: 1.0em;
+  text-transform: uppercase;
+  text-align: right;
+  text-decoration: none;
+}
+
 .post-nav {
   display: flex;
   padding-top: var(--spacer-2);
