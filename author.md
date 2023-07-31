@@ -1,9 +1,14 @@
 ---
 layout: author
 title: Author
-img: /assets/images/tukasa.png
+img: 
 permalink: /author/
 ---
+
+<a href="https://tukasa.github.io/">
+  <img src="{{ "/assets/images/tukasa.png" | relative_url  }}" alt="プロフィール画像" class ="img-responsive author-img">
+</a>
+
 tukasa
 
 ほえほえ日記でPPxについて記事を書いてる人
